@@ -1,8 +1,8 @@
 import { ReactNode, useEffect } from "react"
-import { useAppDispatch, useAppSelector } from "../hooks/useTypedSelector.ts"
-import { fetchEpisodeList } from "../state/show/actions.ts"
-import Loading from "../shared/Loading.tsx"
-import ErrorPage from "../shared/ErrorPage.tsx"
+import { useAppDispatch, useAppSelector } from "../hooks/useTypedSelector"
+import { fetchEpisodeList } from "../state/show/actions"
+import Loading from "../shared/Loading"
+import ErrorPage from "../shared/ErrorPage"
 import EpisodeList from "../shared/EpisodeList"
 
 const EpisodeListContainer = (): ReactNode => {

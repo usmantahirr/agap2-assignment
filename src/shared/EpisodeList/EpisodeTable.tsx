@@ -1,10 +1,10 @@
 import type { MouseEvent } from "react"
+import { useNavigate } from "react-router-dom"
 import { Avatar, IconButton, Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material"
 import styled from "@emotion/styled"
 import Face3Icon from "@mui/icons-material/Face3"
 import VisibilityIcon from "@mui/icons-material/Visibility"
 import type { Episode } from "../../types/Episode"
-import { useNavigate } from "react-router-dom"
 
 const CellNoBorder = styled(TableCell)`
   border-bottom: 1px dashed rgba(0, 0, 0, 0.1);

@@ -1,9 +1,9 @@
 import { createAsyncThunk } from "@reduxjs/toolkit"
-import type { PartialShow } from "../../types/Show.ts"
-import axios, { SHOW_ID } from "../../utils/axios.ts"
+import type { PartialShow } from "../../types/Show"
 import { isAxiosError } from "../../types"
-import type { Episode, EpisodeBySeason } from "../../types/Episode.ts"
-import groupEpisodesBySeason from "../../utils/groupEpisodesBySeason.ts"
+import type { Episode, EpisodeBySeason } from "../../types/Episode"
+import axios, { SHOW_ID } from "../../utils/axios"
+import groupEpisodesBySeason from "../../utils/groupEpisodesBySeason"
 
 export const fetchShowDetails = createAsyncThunk<PartialShow>("show/fetchShowDetails", async (_data, thunkAPI) => {
   try {

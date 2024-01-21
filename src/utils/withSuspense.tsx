@@ -1,5 +1,5 @@
 import { LazyExoticComponent, ReactNode, Suspense } from "react"
-import Loading from "../shared/Loading.tsx"
+import Loading from "../shared/Loading"
 
 const withSuspense = (Component: LazyExoticComponent<() => ReactNode>): ReactNode => {
   return (

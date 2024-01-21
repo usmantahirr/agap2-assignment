@@ -1,7 +1,7 @@
 import type { ReactNode } from "react"
 import { CircularProgress } from "@mui/material"
-import { CenteredBox } from "./index.ts"
-import Template from "./Template.tsx"
+import { CenteredBox } from "./"
+import Template from "./Template"
 
 const Loading = ({ local = false }: { local?: boolean }): ReactNode => {
   const spinner = (

@@ -1,8 +1,8 @@
 import { ActionReducerMapBuilder, createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
-import axios from "../utils/axios.ts"
+import axios from "../utils/axios"
 import { isAxiosError } from "../types"
-import type { PartialEpisode } from "../types/Episode.ts"
-import { initialState, State } from "./state.ts"
+import type { PartialEpisode } from "../types/Episode"
+import { initialState, State } from "./state"
 
 const episode = createSlice({
   name: "episodeList",

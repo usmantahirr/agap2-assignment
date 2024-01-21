@@ -2,9 +2,9 @@ import { Fragment, ReactNode } from "react"
 import { Link } from "react-router-dom"
 import { Breadcrumbs, Typography } from "@mui/material"
 import styled from "@emotion/styled"
-import type { PartialEpisode } from "../../types/Episode.ts"
-import ImageCard from "../ImageCard.tsx"
-import textToHtml from "../../utils/textToHtml.tsx"
+import ImageCard from "../ImageCard"
+import textToHtml from "../../utils/textToHtml"
+import type { PartialEpisode } from "../../types/Episode"
 
 const StyledBreadcrumbs = styled(Breadcrumbs)`
   background: white;

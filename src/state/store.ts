@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit"
-import showReducer from "./show/slice.ts"
-import episodeReducer from "./episode.ts"
+import showReducer from "./show/slice"
+import episodeReducer from "./episode"
 
 export const store = configureStore({
   reducer: {

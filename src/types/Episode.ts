@@ -1,4 +1,4 @@
-import { Image, Links } from "./index.ts"
+import { Image, Links } from "./"
 
 export type Episode = {
   id: number

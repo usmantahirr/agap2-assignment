@@ -1,9 +1,9 @@
 import { lazy, ReactNode } from "react"
 import { Outlet } from "react-router-dom"
-import withSuspense from "./utils/withSuspense.tsx"
-import Template from "./shared/Template.tsx"
+import withSuspense from "./utils/withSuspense"
+import Template from "./shared/Template"
 
-const ShowDetails = lazy(() => import("./containers/ShowDetails.tsx"))
+const ShowDetails = lazy(() => import("./containers/ShowDetails"))
 
 const Home = (): ReactNode => {
   return (

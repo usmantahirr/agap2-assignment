@@ -2,8 +2,8 @@ import { ReactNode, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { useAppDispatch, useAppSelector } from "../hooks/useTypedSelector.ts"
 import { fetchEpisodeDetails } from "../state/episode.ts"
-import Loading from "../shared/Loading.tsx"
-import ErrorPage from "../shared/ErrorPage.tsx"
+import Loading from "../shared/Loading"
+import ErrorPage from "../shared/ErrorPage"
 import EpisodeDetails from "../shared/EpisodeDetails"
 
 const EpisodeDetailsContainer = (): ReactNode => {
@@ -15,7 +15,7 @@ const EpisodeDetailsContainer = (): ReactNode => {
     if (id) {
       dispatch(fetchEpisodeDetails(id))
     }
-  }, [id])
+  }, [dispatch, id])
 
   if (loading) {
     return <Loading />

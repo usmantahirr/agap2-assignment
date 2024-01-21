@@ -2,8 +2,8 @@ import { ReactNode, useState } from "react"
 import { Tab, Tabs, Box } from "@mui/material"
 import styled from "@emotion/styled"
 import TabPanel from "../TabPanel"
-import type { EpisodeBySeason } from "../../types/Episode"
 import EpisodeTable from "./EpisodeTable"
+import type { EpisodeBySeason } from "../../types/Episode"
 
 const StyledTabs = styled(Tabs)`
   margin: 20px 0 0 0;

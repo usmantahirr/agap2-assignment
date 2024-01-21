@@ -1,9 +1,9 @@
 import { ReactNode, useEffect } from "react"
+import { useAppDispatch, useAppSelector } from "../hooks/useTypedSelector"
 import { fetchShowDetails } from "../state/show/actions.ts"
 import ShowDetails from "../shared/ShowDetails"
-import ErrorPage from "../shared/ErrorPage.tsx"
-import Loading from "../shared/Loading.tsx"
-import { useAppDispatch, useAppSelector } from "../hooks/useTypedSelector.ts"
+import ErrorPage from "../shared/ErrorPage"
+import Loading from "../shared/Loading"
 
 const ShowDetailsContainer = (): ReactNode => {
   const { data, loading, error } = useAppSelector((state) => state.show)

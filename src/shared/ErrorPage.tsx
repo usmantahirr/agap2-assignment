@@ -2,7 +2,7 @@ import { ReactNode } from "react"
 import { Link } from "react-router-dom"
 import { Alert, Button } from "@mui/material"
 import styled from "@emotion/styled"
-import Template from "./Template.tsx"
+import Template from "./Template"
 
 interface ErrorPageProps {
   message?: string

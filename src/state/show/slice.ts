@@ -1,8 +1,8 @@
 import { ActionReducerMapBuilder, createSlice, PayloadAction } from "@reduxjs/toolkit"
-import { initialState, State } from "../state.ts"
-import { fetchShowDetails, fetchEpisodeList } from "./actions.ts"
-import type { PartialShow } from "../../types/Show.ts"
-import type { EpisodeBySeason } from "../../types/Episode.ts"
+import { initialState, State } from "../state"
+import { fetchShowDetails, fetchEpisodeList } from "./actions"
+import type { PartialShow } from "../../types/Show"
+import type { EpisodeBySeason } from "../../types/Episode"
 
 const slice = createSlice({
   name: "show",

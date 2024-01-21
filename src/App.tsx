@@ -1,11 +1,11 @@
 import { lazy } from "react"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import withSuspense from "./utils/withSuspense.tsx"
+import withSuspense from "./utils/withSuspense"
 
-const Home = lazy(() => import("./Home.tsx"))
-const EpisodeListContainer = lazy(() => import("./containers/EpisodeList.tsx"))
-const EpisodeDetailsContainer = lazy(() => import("./containers/EpisodeDetails.tsx"))
-const ErrorPage = lazy(() => import("./shared/ErrorPage.tsx"))
+const Home = lazy(() => import("./Home"))
+const EpisodeListContainer = lazy(() => import("./containers/EpisodeList"))
+const EpisodeDetailsContainer = lazy(() => import("./containers/EpisodeDetails"))
+const ErrorPage = lazy(() => import("./shared/ErrorPage"))
 
 function App() {
   return (

@@ -1,5 +1,5 @@
-import type { PartialShow } from "../types/Show.ts"
-import { EpisodeBySeason, PartialEpisode } from "../types/Episode.ts"
+import type { PartialShow } from "../types/Show"
+import { EpisodeBySeason, PartialEpisode } from "../types/Episode"
 
 export interface State {
   loading: boolean

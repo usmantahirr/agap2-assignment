@@ -1,4 +1,4 @@
-import type { Externals, Image, Links, Network, Rating, Schedule } from "./index"
+import type { Externals, Image, Links, Network, Rating, Schedule } from "./"
 
 export type Show = {
   id: number
