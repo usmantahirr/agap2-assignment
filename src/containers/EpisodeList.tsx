@@ -11,7 +11,7 @@ const EpisodeListContainer = (): ReactNode => {
 
   useEffect(() => {
     dispatch(fetchEpisodeList())
-  }, [])
+  }, [dispatch])
 
   if (loading) {
     return <Loading />
