@@ -13,8 +13,7 @@
     "react-hooks",
     "jsx-a11y",
     "prettier",
-    "@typescript-eslint",
-    "airbnb"
+    "@typescript-eslint"
   ],
   "parserOptions": {
     "ecmaVersion": 2021,
