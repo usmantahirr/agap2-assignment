@@ -1,5 +1,5 @@
 import { ReactNode, useEffect } from "react"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useAppDispatch, useAppSelector } from "../hooks/useTypedSelector.ts"
 import { fetchEpisodeDetails } from "../state/episode.ts"
 import Loading from "../shared/Loading.tsx"
@@ -33,12 +33,7 @@ const EpisodeDetailsContainer = (): ReactNode => {
     return <ErrorPage local message="Episode not found" />
   }
 
-  return (
-    <div>
-      <Link to="/">Home</Link>
-      <EpisodeDetails episode={data} />
-    </div>
-  )
+  return <EpisodeDetails episode={data} />
 }
 
 export default EpisodeDetailsContainer
