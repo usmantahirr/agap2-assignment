@@ -1,7 +1,8 @@
 import { ReactNode } from "react"
+import { PartialShow } from "../../types/Show.ts"
 
-const ShowDetails = (): ReactNode => {
-  return <div>Show Details comes here</div>
+const ShowDetails = ({ show }: { show: PartialShow }): ReactNode => {
+  return <div>{show.name}</div>
 }
 
 export default ShowDetails

@@ -1,7 +1,9 @@
 import { ReactNode } from "react"
+import { EpisodeBySeason } from "../../types/Episode.ts"
 
-const EpisodeList = (): ReactNode => {
-  return <div>Episode List Shows here</div>
+const EpisodeList = ({ episodes }: { episodes: EpisodeBySeason }): ReactNode => {
+  console.log(episodes)
+  return <div>Episode List</div>
 }
 
 export default EpisodeList

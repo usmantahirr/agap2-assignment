@@ -1,6 +1,8 @@
 import { ReactNode } from "react"
+import { EpisodeBySeason } from "../../types/Episode.ts"
 
-const EpisodeDetails = (): ReactNode => {
+const EpisodeDetails = ({ episode }: { episode: EpisodeBySeason }): ReactNode => {
+  console.log(episode)
   return <div>Episode Details comes here</div>
 }
 
